@@ -7,7 +7,7 @@ export default createStore({
                 name: "Обязательные для всех",
                 threeDots: true,
                 greyLabel: 'Документы, обязательные для всех сотрудников без исключения',
-                id: 0,
+                id: 8888888888,
                 children: [
                     {name: 'Паспорт', blueDot: true, id: 5},
                     {name: 'ИНН', id: 6}

@@ -31,7 +31,7 @@ export default {
   components: {
     draggable
   },
-  props: ['passedData', 'parent'],
+  props: ['passedData', 'parent', 'openChildren'],
   data() {
     return {
       drag: false,

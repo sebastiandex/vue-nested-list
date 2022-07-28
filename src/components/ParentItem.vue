@@ -3,8 +3,6 @@
   <div
       v-if="!parent.hidden"
       class="typeItem"
-      v-on:dragover="openChildren(true)"
-      v-on:dragleave="openChildren(false)"
   >
     <div style="display: flex; align-items: center">
       <button
@@ -74,12 +72,6 @@ export default {
     }
   },
   methods: {
-    openChildren(bool) {
-      //Открываем категорию если она закрыта и над ней протаскивается документ
-      if (!this.expanded && bool) {
-        this.expanded = true;
-      }
-    },
     editToggle() {
       return this.editing = !this.editing
     },
@@ -195,7 +187,4 @@ export default {
   margin-left: 15px;
 }
 
-.dragging {
-  box-shadow: 0 3px 16px rgba(0, 102, 255, 0.7);
-}
 </style>
